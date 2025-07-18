@@ -12,10 +12,10 @@ POSTER_URL_BASE = "https://image.tmdb.org/t/p/w500/"
 
 def read_data():
   """Reads movie data from CSV files."""
-  df1 = pd.read_csv("tmdb_5000_credits.csv")
+  #df1 = pd.read_csv("tmdb_5000_credits.csv")
   df2 = pd.read_csv("tmdb_5000_movies.csv")
-  df1.columns = ['id', 'tittle', 'cast', 'crew']
-  df2 = df2.merge(df1, on='id')
+  #df1.columns = ['id', 'tittle', 'cast', 'crew']
+  #df2 = df2.merge(df1, on='id')
   return df2
 
 
